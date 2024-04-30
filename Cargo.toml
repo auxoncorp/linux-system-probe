@@ -1,0 +1,23 @@
+[package]
+name = "linux-system-probe"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+auxon-sdk = { git = "https://github.com/auxoncorp/auxon-sdk", branch = "new-ingest-module", features = ["modality"] }
+clap = { version = "4.5.4", features = ["derive", "env"] }
+ctrlc = "3.4.4"
+derive_more = "0.99.17"
+envy = "0.4.2"
+exitcode = "1"
+humantime = "2.1.0"
+procfs = "0.16.0"
+serde = "1.0.198"
+serde_with = "3.7.0"
+thiserror = "1.0.59"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync", "io-util", "net", "signal", "tracing"] }
+toml = "0.5.11"
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+url = "2.5.0"
+uuid = "1.8.0"
